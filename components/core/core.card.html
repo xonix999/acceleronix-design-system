@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Core (Kicker, Chips, Badges, Footer)" -->
+<link rel="stylesheet" href="../../styles.css">
+<div id="root"></div>
+<script src="../../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+const { EyebrowKicker, PageIndexChip, FooterCaptionBar, IconCircle, NumberedBadge } = window.AcceleronixDesignSystem_3e11b3;
+function Demo(){
+  return (
+    <div style={{padding:20,display:'flex',flexDirection:'column',gap:16,background:'#fff',fontFamily:'Arial'}}>
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+        <EyebrowKicker>Company Timeline</EyebrowKicker>
+        <PageIndexChip index={4} />
+      </div>
+      <div style={{display:'flex',gap:16,alignItems:'center'}}>
+        <IconCircle color="var(--purple)"><img src="https://unpkg.com/lucide-static@latest/icons/globe.svg" style={{width:22,height:22,filter:'invert(1)'}} /></IconCircle>
+        <NumberedBadge number={1} accent="var(--accent-violet)" />
+        <NumberedBadge number={2} accent="var(--accent-indigo)" />
+        <NumberedBadge number={3} accent="var(--accent-magenta)" />
+        <NumberedBadge number={4} accent="var(--accent-cyan)" />
+      </div>
+      <FooterCaptionBar date="August 2026" />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>

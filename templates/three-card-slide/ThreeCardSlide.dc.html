@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Three-Card Slide" description="1280x720 slide with an eyebrow/title header, a 3-up pillar-card row, and the standard footer." -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="width:1280px;height:720px;background:#fff;box-sizing:border-box;padding:48px 56px;display:flex;flex-direction:column;font-family:Arial,Helvetica,sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div>
+<x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.EyebrowKicker" hint-size="200px,24px">Section Label</x-import>
+<div style="font-size:48px;font-weight:700;color:var(--ink);margin-top:8px">Three reasons to choose us</div>
+</div>
+<x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.PageIndexChip" index="1" hint-size="30px,20px"></x-import>
+</div>
+<div style="flex:1;display:flex;align-items:center;gap:32px;margin-top:24px">
+<div style="flex:1"><x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.PillarCard" icon="{{ icon1 }}" heading="First reason" body="One line of supporting copy." accent="var(--purple)" hint-size="100%,220px"></x-import></div>
+<div style="flex:1"><x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.PillarCard" icon="{{ icon2 }}" heading="Second reason" body="One line of supporting copy." accent="var(--accent-indigo)" hint-size="100%,220px"></x-import></div>
+<div style="flex:1"><x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.PillarCard" icon="{{ icon3 }}" heading="Third reason" body="One line of supporting copy." accent="var(--accent-magenta)" hint-size="100%,220px"></x-import></div>
+</div>
+<x-import component-from-global-scope="AcceleronixDesignSystem_3e11b3.FooterCaptionBar" date="August 2026" hint-size="100%,20px"></x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const icon = (name) => React.createElement('img', { src: `https://unpkg.com/lucide-static@latest/icons/${name}.svg`, style: { width: 22, height: 22, filter: 'invert(1)' } });
+    return { icon1: icon('globe'), icon2: icon('shield-check'), icon3: icon('radio-tower') };
+  }
+}
+</script>
+</body>
+</html>

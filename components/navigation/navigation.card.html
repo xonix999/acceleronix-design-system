@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x120" name="Navigation (Tabs)" -->
+<link rel="stylesheet" href="../../styles.css">
+<div id="root"></div>
+<script src="../../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+const { Tabs } = window.AcceleronixDesignSystem_3e11b3;
+function Demo(){
+  const [active,setActive]=React.useState('Overview');
+  return <div style={{padding:20,background:'#fff'}}><Tabs items={['Overview','Pricing','Docs']} active={active} onChange={setActive} /></div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>

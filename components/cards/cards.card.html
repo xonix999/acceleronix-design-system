@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x280" name="Cards (Pillar, Flag Tab)" -->
+<link rel="stylesheet" href="../../styles.css">
+<div id="root"></div>
+<script src="../../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+const { PillarCard, FlagTabCard } = window.AcceleronixDesignSystem_3e11b3;
+function Demo(){
+  return (
+    <div style={{padding:20,display:'flex',gap:16,background:'var(--surface-tint)',flexWrap:'wrap'}}>
+      <div style={{width:200}}><PillarCard icon={<img src="https://unpkg.com/lucide-static@latest/icons/globe.svg" style={{width:22,height:22,filter:'invert(1)'}} />} heading="Global Coverage" body="One line of supporting copy." accent="var(--purple)" /></div>
+      <div style={{width:200}}><FlagTabCard label="2019 — Founded" body="Card supporting copy." accent="var(--accent-violet)" /></div>
+      <div style={{width:200}}><FlagTabCard label="2021 — Series A" body="Card supporting copy." accent="var(--accent-indigo)" /></div>
+      <div style={{width:200}}><FlagTabCard label="2023 — eSIM launch" body="Card supporting copy." accent="var(--accent-magenta)" /></div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>

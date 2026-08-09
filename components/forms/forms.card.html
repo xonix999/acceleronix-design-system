@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Forms (Button, Input, Select, Checkbox, Radio, Switch)" -->
+<link rel="stylesheet" href="../../styles.css">
+<div id="root"></div>
+<script src="../../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+const { Button, Input, Select, Checkbox, Radio, Switch } = window.AcceleronixDesignSystem_3e11b3;
+function Demo(){
+  const [on,setOn] = React.useState(true);
+  return (
+    <div style={{padding:20,display:'flex',flexDirection:'column',gap:14,background:'#fff',maxWidth:320}}>
+      <div style={{display:'flex',gap:10}}>
+        <Button variant="primary">Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="ghost">Ghost</Button>
+        <Button disabled>Disabled</Button>
+      </div>
+      <Input placeholder="Company email" />
+      <Select options={['eSIM','eUICC','IoT']} />
+      <Checkbox label="I agree to the terms" checked={true} onChange={()=>{}} />
+      <Radio name="plan" label="Enterprise" checked={true} onChange={()=>{}} />
+      <Switch checked={on} onChange={()=>setOn(!on)} />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>

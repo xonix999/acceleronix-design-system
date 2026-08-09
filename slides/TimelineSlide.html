@@ -1,0 +1,36 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Timeline (Flag Tab Cards)" -->
+<link rel="stylesheet" href="../styles.css">
+<div id="root"></div>
+<script src="../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+const { EyebrowKicker, PageIndexChip, FooterCaptionBar, FlagTabCard } = window.AcceleronixDesignSystem_3e11b3;
+const eras = [
+  {label:'2016 — Founded', accent:'var(--accent-violet)', body:'Company established to build embedded connectivity modules.'},
+  {label:'2019 — eSIM Launch', accent:'var(--accent-indigo)', body:'First eSIM management platform ships to automotive partners.'},
+  {label:'2022 — Global Expansion', accent:'var(--accent-magenta)', body:'Coverage extends to 180+ countries via roaming partnerships.'},
+  {label:'2025 — IoT Scale', accent:'var(--accent-cyan)', body:'Ten million connected devices under management.'},
+];
+function Slide(){
+  return (
+    <div style={{width:1280,height:720,background:'#fff',boxSizing:'border-box',padding:'48px 56px',display:'flex',flexDirection:'column',fontFamily:'Arial,Helvetica,sans-serif'}}>
+      <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}>
+        <div><EyebrowKicker>Company Timeline</EyebrowKicker><div style={{fontSize:'var(--fs-display-title)',fontWeight:700,color:'var(--ink)',marginTop:8}}>A decade of connectivity</div></div>
+        <PageIndexChip index={2} />
+      </div>
+      <div style={{flex:1,display:'flex',alignItems:'center',gap:24,marginTop:24}}>
+        {eras.map((e,i)=>(
+          <div key={i} style={{flex:1}}>
+            <div style={{width:10,height:10,borderRadius:'50%',background:e.accent,margin:'0 auto 12px'}} />
+            <FlagTabCard label={e.label} body={e.body} accent={e.accent} />
+          </div>
+        ))}
+      </div>
+      <FooterCaptionBar date="August 2026" />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide />);
+</script>

@@ -1,0 +1,22 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Cover (Purple, Alt)" -->
+<link rel="stylesheet" href="../styles.css">
+<div id="root"></div>
+<script src="../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+function Slide(){
+  return (
+    <div style={{width:1258,height:651,backgroundImage:'url(../assets/cover-alt-background.jpg)',backgroundSize:'cover',backgroundPosition:'center',boxSizing:'border-box',fontFamily:'Arial,Helvetica,sans-serif',position:'relative',color:'#fff'}}>
+      <img src="../assets/logo-wordmark.svg" style={{position:'absolute',left:34,top:-33,height:160,width:'auto',filter:'brightness(0) invert(1)'}} />
+      <div style={{position:'absolute',top:32,right:44,fontSize:15,fontWeight:700,fontStyle:'italic',color:'#fff'}}>Accelerate IoT</div>
+      <div style={{position:'absolute',left:32,bottom:170,fontSize:14}}>10<sup>th</sup> July · 2026</div>
+      <div style={{position:'absolute',left:32,bottom:96,fontSize:64,fontWeight:700,maxWidth:900}}>Management Meeting</div>
+      <div style={{position:'absolute',left:32,bottom:64,fontSize:20,color:'#C7D2FE'}}>Monthly Report</div>
+      <div style={{position:'absolute',right:44,bottom:32,fontSize:13,color:'#C7D2FE'}}>Confidential · Internal</div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide />);
+</script>

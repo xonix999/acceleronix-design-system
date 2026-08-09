@@ -1,0 +1,24 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Cover (Dark)" -->
+<link rel="stylesheet" href="../styles.css">
+<div id="root"></div>
+<script src="../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script type="text/babel">
+function Slide(){
+  return (
+    <div style={{width:1280,height:720,background:'#0A0B1E',backgroundImage:'url(../assets/cover-background.png)',backgroundSize:'cover',backgroundPosition:'center',boxSizing:'border-box',padding:'56px 64px',display:'flex',flexDirection:'column',justifyContent:'center',fontFamily:'Arial,Helvetica,sans-serif',position:'relative'}}>
+      <img src="../assets/logo-wordmark.svg" style={{position:'absolute',left:64,top:40,height:160,width:'auto',filter:'brightness(0) invert(1)'}} />
+      <div style={{fontSize:20,fontWeight:700,color:'#AFA9EC',letterSpacing:'2px',textTransform:'uppercase'}}>Company Overview</div>
+      <div style={{fontSize:68,fontWeight:700,color:'#fff',marginTop:16,maxWidth:900}}>Acceleronix</div>
+      <div style={{fontSize:26,color:'#fff',marginTop:8,opacity:0.85}}>Global eSIM connectivity for connected devices</div>
+      <div style={{position:'absolute',left:64,right:64,bottom:40,display:'flex',justifyContent:'space-between',fontSize:14,color:'#AFA9EC'}}>
+        <span>Version 001 · August 2026</span>
+        <span>Confidential</span>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide />);
+</script>
