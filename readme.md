@@ -2,7 +2,7 @@
 
 ## Overview
 
-Acceleronix is a B2B IoT/eSIM connectivity company (embedded connectivity modules, eUICC-based eSIM management, automotive and OEM partnerships). This design system is extracted entirely from the company's own slide-template deck, **`Acceleronix_Style_Examples.pptx`** (provided as `uploads/DESIGN.md`, a structured extraction of that deck's fills, type runs, and layout — no other source was provided: no Figma link, no codebase, no separate logo/asset files). Treat `uploads/DESIGN.md` as the canonical source record; everything below derives from it.
+Acceleronix is the end-to-end IoT partner trusted by global innovators to move faster with less complexity. From concept to global deployment, we handle design, connectivity, SIM/eSIM lifecycle, AI, cloud, and compliance so you launch faster, and scale smarter. This design system is extracted entirely from the company's own slide-template deck, **`Acceleronix_Style_Examples.pptx`** (provided as `uploads/DESIGN.md`, a structured extraction of that deck's fills, type runs, and layout — no other source was provided: no Figma link, no codebase, no separate logo/asset files). Treat `uploads/DESIGN.md` as the canonical source record; everything below derives from it.
 
 The brand is a plain, confident corporate identity: white canvas, Arial in two weights only, near-black "ink" text, and a four-color violet→indigo→magenta→cyan rotation used to differentiate parallel items (timeline eras, numbered principles, pillar cards). See `uploads/DESIGN.md` for the full raw extraction including per-slide notes and a source-accuracy caveat on the brand's own printed color labels.
 
