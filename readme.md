@@ -6,8 +6,6 @@ Acceleronix is the end-to-end IoT partner trusted by global innovators to move f
 
 The brand is a plain, confident corporate identity: white canvas, Arial in two weights only, near-black "ink" text, and a four-color violet→indigo→magenta→cyan rotation used to differentiate parallel items (timeline eras, numbered principles, pillar cards). See `uploads/DESIGN.md` for the full raw extraction including per-slide notes and a source-accuracy caveat on the brand's own printed color labels.
 
-**No product UI, app, or website was provided** — only a slide deck. Accordingly this system contains brand foundations, a full slide-anatomy set, and a set of general-purpose UI primitives (Button, Input, etc.) added so the brand can be used to prototype software, not just decks — flagged individually below as intentional additions.
-
 ## Content Fundamentals
 
 Evidence is limited to the deck's structural copy (there is no marketing/product prose in the source). Observed patterns:
